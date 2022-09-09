@@ -52,3 +52,10 @@
 .project_info {
   width: 100%;
 }
+
+.services_card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
