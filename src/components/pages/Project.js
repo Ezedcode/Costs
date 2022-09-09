@@ -1,4 +1,4 @@
-import { parse, v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import styles from "./Project.module.css";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -96,7 +96,33 @@ function Project() {
       })
       .catch((err) => console.log(err));
   }
-  function removeService() {}
+
+  function removeService(id, cost) {
+    const servicesUpdated = project.services.filter(
+      (service) => service.id !== id
+    );
+
+    const projectUpdated = project;
+
+    projectUpdated.services = servicesUpdated;
+    projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost);
+
+    fetch(`http://localhost:5000/projects/${project.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(projectUpdated),
+    })
+      .then((resp) => resp.jason())
+      .then(() => {
+        setProject(project.services.filter((service) => service.id !== id));
+        setServices(servicesUpdated);
+        setMessage("Service deleted successfully!");
+      })
+      .catch((err) => console.log(err));
+  }
+
   function toggleProjectForm() {
     setShowProjectForm(!showProjectForm);
   }
