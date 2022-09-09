@@ -7,8 +7,63 @@
         "id": "2",
         "name": "Development"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 2100,
+      "services": [
+        {
+          "name": "Zedino",
+          "cost": "300",
+          "description": "cc",
+          "id": "f8d574bc-dc72-4136-bcf4-fa3a8d1f25cd"
+        },
+        {
+          "name": "Zedino",
+          "cost": "300",
+          "description": "cc",
+          "id": "f8d574bc-dc72-4136-bcf4-fa3a8d1f25cd"
+        },
+        {
+          "name": "Zedino",
+          "cost": "300",
+          "description": "cc",
+          "id": "f8d574bc-dc72-4136-bcf4-fa3a8d1f25cd"
+        },
+        {
+          "name": "Zedino",
+          "cost": "300",
+          "description": "cc",
+          "id": "f8d574bc-dc72-4136-bcf4-fa3a8d1f25cd"
+        },
+        {
+          "name": "Zedino",
+          "cost": "300",
+          "description": "ccs",
+          "id": "3c19db10-6569-4365-bb76-c964a84878c8"
+        },
+        {
+          "name": "Zedino",
+          "cost": "3003",
+          "description": "ccs",
+          "id": "0a786440-8b37-40a4-9dc9-024b9dc1d8a8"
+        },
+        {
+          "name": "Zedino",
+          "cost": "200",
+          "description": "ccs",
+          "id": "1024c111-9acd-4ff8-a143-ade365ce41e4"
+        },
+        {
+          "name": "Zedin",
+          "cost": "200",
+          "description": "ccs",
+          "id": "cadc6ef5-350c-454d-9e60-06f6754e2573"
+        },
+        {
+          "name": "Zedin5",
+          "cost": "200",
+          "description": "ccs",
+          "id": "47630c9d-7e5b-4f25-9626-e9f3ef2b87df"
+        }
+      ],
       "id": 1
     },
     {
