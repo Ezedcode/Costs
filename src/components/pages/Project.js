@@ -107,7 +107,7 @@ function Project() {
     projectUpdated.services = servicesUpdated;
     projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost);
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
+    fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -116,7 +116,7 @@ function Project() {
     })
       .then((resp) => resp.jason())
       .then(() => {
-        setProject(project.services.filter((service) => service.id !== id));
+        setProject(projectUpdated);
         setServices(servicesUpdated);
         setMessage("Service deleted successfully!");
       })
