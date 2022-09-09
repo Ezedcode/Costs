@@ -12,19 +12,8 @@
       "id": 1
     },
     {
-      "name": "Zedino",
-      "budget": "1000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Ezedcode",
-      "budget": "500",
+      "name": "Ezedélio Macuete",
+      "budget": "555",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -34,15 +23,26 @@
       "id": 3
     },
     {
-      "name": "Zedy",
-      "budget": "1500",
+      "name": "Zedino",
+      "budget": "1000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Ezedélio Garcia",
+      "budget": "5655",
       "category": {
         "id": "4",
         "name": "Planning"
       },
       "cost": 0,
       "services": [],
-      "id": 4
+      "id": 5
     }
   ],
   "categories": [
