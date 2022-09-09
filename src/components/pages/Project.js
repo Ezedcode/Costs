@@ -94,7 +94,6 @@ function Project() {
               )}
             </div>
           </Container>
-          <p></p>
         </div>
       ) : (
         <Loading />
